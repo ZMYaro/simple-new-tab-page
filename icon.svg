@@ -1,2 +1,15 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128"><style>tspan{white-space:pre}.a{font-size: 15px;fill: #000000;font-weight: 700;font-family: "Consolas-Bold", "Consolas"}</style><path  d="m5.3 101.3c0 5.9 4.8 10.7 10.7 10.7h96c5.9 0 10.7-4.8 10.7-10.7v-53.3c0-5.9-4.8-10.7-10.7-10.7h-10.7v-10.6c0-5.9-4.8-10.7-10.6-10.7h-74.7c-5.9 0-10.7 4.8-10.7 10.7m53.4 0h32v10.6h-32zm-42.7 0h32v21.4h-32zm96 74.6h-96v-53.3h85.3 10.7z"/><text style="transform:matrix(5.333,0,0,5.333,62.667,113)"><tspan x="-4.1" y="0" class="a">*</tspan><tspan  y="0" class="a">
-</tspan></text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      tspan {
+        font-family: Consolas-Bold, Consolas;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+<path d="M1,19c0,1.1.9,2,2,2h18c1.1,0,2-.9,2-2v-10c0-1.1-.9-2-2-2h-2v-2c0-1.1-.9-2-2-2H3c-1.1,0-2,.9-2,2M11,5h6v2h-6v-2ZM3,5h6v4H3v-4ZM21,19H3v-10h18v10Z"/>
+<polygon points="11 11 13 11 13 13 15 13 15 15 13 15 13 17 11 17 11 15 9 15 9 13 11 13 11 11"/>
+<text transform="translate(7.7 21.2)"><tspan x="0" y="0">*</tspan></text>
+</svg>
