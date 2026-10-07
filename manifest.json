@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Extremely Simple New Tab Page",
+	"version": "1.0",
+	"description": "A new tab page with just your top sites and nothing else.  No news feeds, no ads, no Internet connection required.",
+	"author": "Zachary Yaro",
+	"icons": {
+		"16": "icon16.png",
+		"128": "icon128.png"
+	},
+	"permissions": [
+		"favicon",
+		"topSites"
+	],
+	"web_accessible_resources": [{
+		"resources": ["_favicon/*"],
+		"matches": ["<all_urls>"],
+		"extension_ids": ["*"]
+	}],
+	"chrome_url_overrides" : {
+		"newtab": "index.html"
+	}
+}

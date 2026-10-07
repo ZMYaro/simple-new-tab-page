@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--max-tiles-per-row: 10;
+	--tile-size: 96px;
+	--tile-corner-radius: 4px;
+	--icon-size: 32px;
+	--spacing: 8px;
+	
+	color-scheme: light dark;
+	
+	display: grid;
+	inline-size: 100%;
+	block-size: 100%;
+	place-items: center;
+}
+
+#top-sites {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: balance;
+	padding: 0;
+	max-inline-size: calc(var(--max-tiles-per-row) * (var(--tile-size) + var(--spacing)));
+	gap: var(--spacing);
+	
+	li {
+		display: contents;
+		
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			
+			inline-size: var(--tile-size);
+			block-size: var(--tile-size);
+			padding: var(--spacing);
+			gap: var(--spacing);
+			
+			border-radius: var(--tile-corner-radius);
+			text-decoration: none;
+			color: ButtonText;
+			background-color: transparent;
+			transition: background-color 0.2s;
+			
+			&:focus,
+			&:hover {
+				background-color: ButtonFace;
+				background-color: rgb(from ButtonFace r g b / 60%);
+			}
+			&:active {
+				background-color: ButtonFace;
+			}
+			
+			img {
+				box-sizing: content-box;
+				inline-size: var(--icon-size);
+				block-size: var(--icon-size);
+			}
+			
+			span {
+				block-size: 2lh;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+				/* Clamp lines with ellipses in WebKit-derived browsers. */
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+			}
+		}
+	}
+}
