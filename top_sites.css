@@ -19,10 +19,11 @@
 
 #top-sites {
 	list-style-type: none;
+	padding: 0;
+	
 	display: flex;
 	justify-content: center;
 	flex-wrap: balance;
-	padding: 0;
 	max-inline-size: calc(var(--max-tiles-per-row) * (var(--tile-size) + var(--spacing)));
 	gap: var(--spacing);
 	
@@ -63,6 +64,7 @@
 			}
 			
 			span {
+				word-break: break-word;
 				block-size: 2lh;
 				overflow: hidden;
 				text-overflow: ellipsis;

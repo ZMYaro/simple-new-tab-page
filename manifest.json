@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Extremely Simple New Tab Page",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A new tab page with just your top sites and nothing else.  No news feeds, no ads, no Internet connection required.",
 	"author": "Zachary Yaro",
 	"icons": {
